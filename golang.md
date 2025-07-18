@@ -1,4 +1,4 @@
-# Golang Installation Guide – Standard Operating Procedure (SOP)
+# Golang Installation Guide
 
 | Author      | Created on  | Version    | Last updated by | Last edited on |
 |-------------|-------------|------------|-----------------|----------------|
@@ -22,7 +22,7 @@
 
 ## Introduction
 
-This SOP outlines the process of installing the Go programming language (Golang) on Windows, macOS, and Linux systems. Go is known for its simplicity, concurrency support, and performance.
+This guide outlines the process of installing the Go programming language (Golang) on Windows, macOS, and Linux systems. Go is known for its simplicity, concurrency support, and performance.
 
 ---
 
@@ -142,11 +142,11 @@ Remove PATH references from profile files.
 
 | **Name**     | **Email address**                |
 |--------------|----------------------------------|
-| Sonal        | [sonal@example.com](mailto:sonal@example.com) |
+| Sonal        | [sonal.roha.snaatak@mygurukulam.co](mailto:sonal.roha.snaatak@mygurukulam.co) |
 
 ---
 
-## 📚 References
+## References
 
 | **Link**                                             | **Description**                |
 |------------------------------------------------------|--------------------------------|
@@ -156,6 +156,6 @@ Remove PATH references from profile files.
 
 ---
 
-## 👥 Contributor
+## Contributor
 
 - [Sonal](#)
