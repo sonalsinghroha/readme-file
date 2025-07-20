@@ -1,4 +1,4 @@
-# Version Control System (VCS) – Detailed Documentation
+# Version Control System (VCS) 
 
 | Author      | Created on  | Version    | Last updated by | Last edited on |
 |-------------|-------------|------------|-----------------|----------------|
