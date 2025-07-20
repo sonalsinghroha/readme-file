@@ -108,7 +108,7 @@ A VCS is a foundational tool in modern software development. Whether working sol
 
 | **Name**     | **Email address**                |
 |--------------|----------------------------------|
-| Sonal        | [sonal@example.com](mailto:sonal@example.com) |
+| Sonal        | [sonal.roha.snaatak@mygurukulam.co](sonal.roha.snaatak@mygurukulam.co) |
 
 ---
 
