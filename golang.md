@@ -158,4 +158,4 @@ Remove PATH references from profile files.
 
 ## Contributor
 
-[Sonal](#)
+Sonal
