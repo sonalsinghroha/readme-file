@@ -112,7 +112,7 @@ A VCS is a foundational tool in modern software development. Whether working sol
 
 ---
 
-## 📚 References
+## References
 
 | **Link**                                                        | **Description**                        |
 |-----------------------------------------------------------------|----------------------------------------|
@@ -122,6 +122,5 @@ A VCS is a foundational tool in modern software development. Whether working sol
 
 ---
 
-## 👥 Contributor
-
-- [Sonal](#)
+## Contributor
+Sonal
