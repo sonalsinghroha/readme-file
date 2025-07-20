@@ -1,4 +1,4 @@
-# Python Installation Guide – Standard Operating Procedure (SOP)
+# Python Installation Guide 
 
 | Author      | Created on  | Version    | Last updated by | Last edited on |
 |-------------|-------------|------------|-----------------|----------------|
@@ -29,7 +29,7 @@ This SOP provides a detailed guide for installing Python on different operating 
 
 ## System Requirements
 
-- OS: Windows 10/11, macOS, or any major Linux distro
+- OS: Windows 10/11, macOS, Linux 
 - Admin/root access
 - Internet connection
 - 200MB of disk space
@@ -41,7 +41,7 @@ This SOP provides a detailed guide for installing Python on different operating 
 1. Visit [https://www.python.org/downloads](https://www.python.org/downloads)
 2. Download the latest Windows installer.
 3. Run the installer:
-   - ✅ **Check** “Add Python to PATH”
+   - **Check** “Add Python to PATH”
    - Click “Install Now”
 4. Wait for the installation to complete.
 
@@ -150,11 +150,11 @@ sudo apt update && sudo apt upgrade python3
 
 | **Name**     | **Email address**                |
 |--------------|----------------------------------|
-| Sonal        | [sonal@example.com](mailto:sonal@example.com) |
+| Sonal        | [sonal.roha.snaatak@mygurukulam.co](sonal.roha.snaatak@mygurukulam.co) |
 
 ---
 
-## 📚 References
+## References
 
 | **Link**                                               | **Description**                  |
 |--------------------------------------------------------|----------------------------------|
@@ -163,6 +163,6 @@ sudo apt update && sudo apt upgrade python3
 
 ---
 
-## 👥 Contributor
+## Contributor
 
-- [Sonal](#)
+Sonal
