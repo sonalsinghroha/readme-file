@@ -2,13 +2,13 @@
 
 | Author      | Created on  | Version    | Last updated by | Last edited on |
 |-------------|-------------|------------|-----------------|----------------|
-| Sonal       | 18-07-2025  | version 1  | Sonal           | 18-07-2025     |
+| Sonal       | 18-07-2025  | version 1  | Sonal           | 17-07-2025     |
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Why Use Make?](#why-use-make)
 - [What is Make?](#what-is-make)
 - [Key Features](#key-features)
+- [Why Use Make?](#why-use-make)
 - [Basic Makefile Example](#basic-makefile-example)
 - [Best Use Cases](#best-use-cases)
 - [Contact Information](#contact-information)
@@ -20,17 +20,6 @@
 ## Introduction
 
 This document provides an overview of **`make`**, a powerful build automation tool commonly used in software development to compile and manage projects efficiently. Originally created for C/C++ programs, `make` is now used for a wide range of automation tasks.
-
----
-
-## Why Use Make?
-
-- ✅ Automates complex build processes  
-- ✅ Saves time by only rebuilding what has changed  
-- ✅ Reduces human error and improves reliability  
-- ✅ Improves maintainability of large codebases  
-- ✅ Works cross-platform (Unix/Linux/macOS; available for Windows)  
-- ✅ Easily integrates into CI/CD pipelines  
 
 ---
 
@@ -61,7 +50,16 @@ make
 | **Shell Integration**    | Executes shell commands directly within Makefiles                              |
 
 ---
+## Why Use Make?
 
+- Automates complex build processes  
+- Saves time by only rebuilding what has changed  
+- Reduces human error and improves reliability  
+- Improves maintainability of large codebases  
+- Works cross-platform (Unix/Linux/macOS; available for Windows)  
+- Easily integrates into CI/CD pipelines
+
+---
 ## Basic Makefile Example
 
 ```make
@@ -106,11 +104,11 @@ make clean
 
 | **Name**     | **Email address**                |
 |--------------|----------------------------------|
-| Sonal        | [sonal@example.com](mailto:sonal@example.com) |
+| Sonal        | [sonal.roha.snaatak@mygurukulam.co](mailto:sonal.roha.snaatak@mygurukulam.co) |
 
 ---
 
-## 📚 References
+## References
 
 | **Link**                                               | **Description**                       |
 |--------------------------------------------------------|---------------------------------------|
@@ -119,6 +117,6 @@ make clean
 
 ---
 
-## 👥 Contributor
+## Contributor
 
-- [Sonal](#)
+- Sonal
