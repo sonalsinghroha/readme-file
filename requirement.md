@@ -1,4 +1,4 @@
-# Requirements.txt – Standard Operating Procedure (SOP)
+# Requirements.txt – SOP
 
 | Author      | Created on  | Version    | Last updated by | Last edited on |
 |-------------|-------------|------------|------------------|----------------|
@@ -8,9 +8,9 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Section 1: Installing from requirements.txt](#section-1-installing-from-requirementstxt)
-- [Section 2: Generating requirements.txt (Freezing Dependencies)](#section-2-generating-requirementstxt-freezing-dependencies)
-- [Section 3: Troubleshooting Common Issues](#section-3-troubleshooting-common-issues)
+- [Installing from requirements.txt](#installing-from-requirementstxt)
+- [Generating requirements.txt (Freezing Dependencies)](#generating-requirementstxt-freezing-dependencies)
+- [Troubleshooting Common Issues](#troubleshooting-common-issues)
 - [Best Practices](#best-practices)
 - [Contact Information](#contact-information)
 - [References](#references)
@@ -24,7 +24,7 @@ This SOP explains how to use the `requirements.txt` file in Python projects for 
 
 ---
 
-## Section 1: Installing from requirements.txt
+## Installing from requirements.txt
 
 Install all required Python packages in one step using:
 
@@ -38,7 +38,7 @@ This reads the file line by line and installs the exact versions specified.
 
 ---
 
-## Section 2: Generating requirements.txt (Freezing Dependencies)
+## Generating requirements.txt (Freezing Dependencies)
 
 You can generate the `requirements.txt` file in two ways:
 
@@ -64,7 +64,7 @@ This method helps you avoid cluttering the file with unnecessary packages.
 
 ---
 
-## Section 3: Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Issue**                                  | **Root Cause**                             | **Solution**                                                                  |
 |--------------------------------------------|--------------------------------------------|-------------------------------------------------------------------------------|
@@ -107,7 +107,7 @@ This method helps you avoid cluttering the file with unnecessary packages.
 
 ---
 
-## 👥 Contributor
+## Contributor
 
-- [Sonal](#)
+Sonal
 
