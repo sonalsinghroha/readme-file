@@ -1,12 +1,12 @@
-# 🛠️ Ansible Playbook - Documentation
+# Ansible Playbook - Documentation
 
 | Author | Created on | Version | Last updated by | Last edited on |
 |--------|------------|---------|------------------|----------------|
-| Sonal  | 18-07-25   | v1.0    | Sonal            | 18-07-25       |
+| Sonal  | 18-07-25   | version 1	  | Sonal            | 18-07-25       |
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 - [Introduction](#introduction)
 - [Why Ansible Playbooks are Used](#why-ansible-playbooks-are-used)
 - [What to Include in an Ansible Playbook](#what-to-include-in-an-ansible-playbook)
@@ -21,27 +21,28 @@
 
 ---
 
-## 🧾 Introduction
+## Introduction
 
-Ansible Playbook is a YAML file containing automation instructions (called **tasks**) for configuration, deployment, or orchestration.
+An **Ansible Playbook** is a YAML-formatted file that defines a set of automation tasks used for configuration management, application deployment, and IT orchestration.
 
-> **Hindi:** Ansible playbook ek file hoti hai jisme step-by-step likha hota hai ki server par kya automate karna hai — jaise software install karna, service restart karna, config update karna, etc.
+Playbooks describe **what** actions to perform and **in what order**, making them easy to read, share, and reuse across teams.
 
-Ansible is **agentless**, meaning no software needs to be installed on client machines — only SSH access is required.
+Ansible is **agentless**, which means it doesn’t require any software or agents to be installed on the target systems. All it needs is **SSH access** and Python installed on the managed nodes.
 
----
-
-## ❓ Why Ansible Playbooks are Used
-
-1. **Automation of Manual Tasks** – No more typing the same commands on multiple servers.
-2. **Consistency** – All environments (dev/stage/prod) stay same.
-3. **Version Controlled** – Stored in Git for tracking changes.
-4. **Scalability** – Run tasks across 100s of servers easily.
-5. **Easy Rollbacks** – You can revert configs easily if you write reversible tasks.
 
 ---
 
-## 🧩 What to Include in an Ansible Playbook
+## Why Ansible Playbooks are Used
+
+- **Automation of Manual Tasks** – No more typing the same commands on multiple servers.
+- **Consistency** – All environments (dev/stage/prod) stay same.
+- **Version Controlled** – Stored in Git for tracking changes.
+- **Scalability** – Run tasks across 100s of servers easily.
+- **Easy Rollbacks** – You can revert configs easily if you write reversible tasks.
+
+---
+
+## What to Include in an Ansible Playbook
 
 - **Play Name** – Description of what the playbook does
 - **Hosts** – Target systems (e.g., `webservers`, `all`, `localhost`)
@@ -53,7 +54,7 @@ Ansible is **agentless**, meaning no software needs to be installed on client ma
 
 ---
 
-## 🌟 Key Features of Ansible Playbooks
+## Key Features of Ansible Playbooks
 
 - **YAML-based** – Simple, readable structure
 - **Idempotent** – Running it multiple times won’t change the result
@@ -63,7 +64,7 @@ Ansible is **agentless**, meaning no software needs to be installed on client ma
 
 ---
 
-## ✍️ How to Write an Ansible Playbook
+## How to Write an Ansible Playbook
 
 ```bash
 1. Create a file: playbook.yml
@@ -75,7 +76,7 @@ Ansible is **agentless**, meaning no software needs to be installed on client ma
 
 ---
 
-## 📄 Sample Ansible Playbook
+## Sample Ansible Playbook
 
 ```yaml
 ---
@@ -104,7 +105,7 @@ Ansible is **agentless**, meaning no software needs to be installed on client ma
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 - Use **meaningful play and task names**
 - Keep playbooks **modular** using **roles**
@@ -116,7 +117,7 @@ Ansible is **agentless**, meaning no software needs to be installed on client ma
 
 ---
 
-## ⚠️ Common Mistakes
+## Common Mistakes
 
 | Mistake                     | Problem Caused                            |
 |-----------------------------|--------------------------------------------|
@@ -128,15 +129,15 @@ Ansible is **agentless**, meaning no software needs to be installed on client ma
 
 ---
 
-## 📬 Contact Information
+## Contact Information
 
 | Name   | Email                      |
 |--------|----------------------------|
-| Sonal  | [your.email@example.com](mailto:your.email@example.com) |
+| Sonal  | [sonal.roha.snaatak@mygurukulam.co](mailto:sonal.roha.snaatak@mygurukulam.co) |
 
 ---
 
-## 📚 References
+## References
 
 | Link | Description |
 |------|-------------|
@@ -146,6 +147,6 @@ Ansible is **agentless**, meaning no software needs to be installed on client ma
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 - Sonal
