@@ -1,8 +1,10 @@
 # Golang Installation Guide
 
-| Author      | Created on  | Version    | Last updated by | Last edited on |
-|-------------|-------------|------------|-----------------|----------------|
-| Sonal       | 16-07-2025  | version 1  | Sonal           | 16-07-2025     |
+## Author Information
+
+| Created by    | Created on | Version | Last Updated On | Pre Reviewer | L0 Reviewer | L1 Reviewer | L2 Reviewer |
+|---------------|-------------|---------|------------------|----------------|---------------|----------------|---------------|
+| Sonal  | 16-07-2025  | V 1.0   | 17-07-2025       | Anjali    |               |                |               |
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -16,7 +18,7 @@
 - [Best Practices](#best-practices)
 - [Contact Information](#contact-information)
 - [References](#references)
-- [Contributor](#contributor)
+
 
 ---
 
@@ -156,6 +158,3 @@ Remove PATH references from profile files.
 
 ---
 
-## Contributor
-
-Sonal
