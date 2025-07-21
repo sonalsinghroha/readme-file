@@ -1,8 +1,11 @@
 # Version Control System (VCS) 
 
-| Author      | Created on  | Version    | Last updated by | Last edited on |
-|-------------|-------------|------------|-----------------|----------------|
-| Sonal       | 18-07-2025  | version 1  | Sonal           | 18-07-2025     |
+## Author Information
+
+| Created by    | Created on | Version | Last Updated On | Pre Reviewer | L0 Reviewer | L1 Reviewer | L2 Reviewer |
+|---------------|-------------|---------|------------------|----------------|---------------|----------------|---------------|
+| Sonal  | 16-07-2025  | V 1.0   | 17-07-2025       | Anjali    |               |                |               |
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -16,7 +19,6 @@
 - [Conclusion](#conclusion)
 - [Contact Information](#contact-information)
 - [References](#references)
-- [Contributor](#contributor)
 
 ---
 
@@ -122,5 +124,3 @@ A VCS is a foundational tool in modern software development. Whether working sol
 
 ---
 
-## Contributor
-Sonal
