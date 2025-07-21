@@ -1,4 +1,5 @@
 # Golang Installation Guide
+<img width="299" height="169" alt="image" src="https://github.com/user-attachments/assets/6f960f18-6834-4684-b930-8f25df921e64" />
 
 ## Author Information
 
