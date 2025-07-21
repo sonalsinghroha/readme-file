@@ -1,8 +1,11 @@
 # Introduction to Make – Documentation
 
-| Author      | Created on  | Version    | Last updated by | Last edited on |
-|-------------|-------------|------------|-----------------|----------------|
-| Sonal       | 17-07-2025  | version 1  | Sonal           | 17-07-2025     |
+## Author Information
+
+| Created by    | Created on | Version | Last Updated On | Pre Reviewer | L0 Reviewer | L1 Reviewer | L2 Reviewer |
+|---------------|-------------|---------|------------------|----------------|---------------|----------------|---------------|
+| Sonal  | 18-07-2025  | V 1.0   | 18-07-2025 | Anjali    |               |                |               |
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -13,7 +16,6 @@
 - [Best Use Cases](#best-use-cases)
 - [Contact Information](#contact-information)
 - [References](#references)
-- [Contributor](#contributor)
 
 ---
 
@@ -117,6 +119,3 @@ make clean
 
 ---
 
-## Contributor
-
- Sonal
