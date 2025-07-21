@@ -1,8 +1,10 @@
 # Ansible Playbook - Documentation
 
-| Author | Created on | Version | Last updated by | Last edited on |
-|--------|------------|---------|------------------|----------------|
-| Sonal  | 18-07-25   | version 1	  | Sonal            | 18-07-25       |
+## Author Information
+
+| Created by    | Created on | Version | Last Updated On | Pre Reviewer | L0 Reviewer | L1 Reviewer | L2 Reviewer |
+|---------------|-------------|---------|------------------|----------------|---------------|----------------|---------------|
+| Sonal  | 16-07-2025  | V 1.0   | 17-07-2025       | Anjali    |               |                |               |
 
 ---
 
@@ -17,7 +19,7 @@
 - [Common Mistakes](#common-mistakes)
 - [Contact Information](#contact-information)
 - [References](#references)
-- [Contributors](#contributors)
+
 
 ---
 
@@ -146,7 +148,3 @@ Ansible is **agentless**, which means it doesn’t require any software or agent
 | [Ansible Galaxy](https://galaxy.ansible.com/) | Community roles for reuse |
 
 ---
-
-## Contributors
-
-- Sonal
