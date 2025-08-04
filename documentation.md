@@ -157,6 +157,7 @@ Click **Setup notifications** to apply your changes.
 > <img width="1147" height="348" alt="Screenshot 2025-08-04 162104" src="https://github.com/user-attachments/assets/8bc9a08f-5309-4239-be19-81d0a6ded091" />
 
 
+><img width="1063" height="403" alt="Screenshot 2025-08-04 173252" src="https://github.com/user-attachments/assets/458e6bd4-14ad-456c-b16a-88b237266509" />
 
 
 ###  Summary
@@ -171,91 +172,55 @@ Click **Setup notifications** to apply your changes.
 
 ### Slack Notification Setup
 
-**Step 1:** Visit [Slack API Apps](https://api.slack.com/apps) and create a new app
-Click **Create New App → From Scratch**, then name the app and select your workspace.
+**Step 1:** Visit [https://api.slack.com/apps](https://api.slack.com/apps) and create a new app for GitHub
+Click **Create New App → From Scratch**, and select your Slack workspace.
 
-> Insert screenshot of Slack app creation
-
----
-
-**Step 2:** Enable Incoming Webhooks
-In the app features menu, toggle **Incoming Webhooks** ON.
-
-> Insert screenshot of enabling webhooks
+> Create Slack App <img width="1201" height="283" alt="Screenshot 2025-08-04 173504" src="https://github.com/user-attachments/assets/be4df036-a373-4717-8811-ae9b1a54174b" />
 
 ---
 
-**Step 3:** Add a new webhook to your workspace
-Click **Add New Webhook**, then select a channel to post messages to.
+**Step 2:** Integrate Slack with GitHub by authorizing access
+Log in with your GitHub credentials, complete OTP verification, and authorize the Slack app.
 
-> Insert screenshot of channel selection
+ GitHub Login
+> <img width="878" height="520" alt="Screenshot 2025-08-04 143220" src="https://github.com/user-attachments/assets/f51455a6-7eb7-444d-bcc2-507469c90090" />
 
----
 
-**Step 4:** Copy the generated webhook URL
-You'll use this URL in GitHub to send messages.
 
-> Insert screenshot of webhook URL
+ GitHub Two-Factor Authentication 
+ ><img width="809" height="594" alt="Screenshot 2025-08-04 143233" src="https://github.com/user-attachments/assets/fe6d6543-c687-4e0a-a807-56ec396e269a" />
 
----
+ Select GitHub Organization for Access
+> <img width="781" height="598" alt="Screenshot 2025-08-04 143409" src="https://github.com/user-attachments/assets/fa06cf11-d640-44f7-8993-6086a991c30c" />
 
-**Step 5:** Open your GitHub repository settings
-Go to **Settings → Webhooks** in your repository.
+ Confirm GitHub App Authorization 
+ ><img width="809" height="408" alt="Screenshot 2025-08-04 143437" src="https://github.com/user-attachments/assets/a59f1d99-79c6-4e76-9457-a863f1ad3063" />
 
-> Insert screenshot of GitHub webhook section
 
----
-
-**Step 6:** Add a new webhook
-Paste the Slack webhook URL in the **Payload URL** field.
-Set **Content type** to `application/json`.
-(Optional) Set a secret for added security.
-
-> Insert screenshot of webhook creation in GitHub
 
 ---
 
-**Step 7:** Choose which events to trigger Slack messages
-Examples include:
+**Step 3:** Subscribe your GitHub repository to a Slack channel
+Go to the Slack channel and run the subscribe command:
 
-* Pushes
-* Pull Requests
-* Issues
-* Workflow runs (CI/CD)
-* Deployments
+```bash
+/github subscribe owner/repo
+```
 
-> Insert screenshot showing event selection
+Example:
 
----
+```bash
+/github subscribe sonalsinghroha/newone
+```
 
-**Step 8:** (Optional) Customize message formatting
-By default, GitHub sends full JSON payloads.
-To format messages or filter events, use a middleware like Zapier, n8n, or a custom function.
+ Type the subscription command
+ ><img width="529" height="224" alt="Screenshot 2025-08-04 175046" src="https://github.com/user-attachments/assets/7ca84eb5-9703-4e84-9406-9af718da16d1" />
 
-> Insert screenshot of advanced config (optional)
+ Grant access permission to Slack app 
+ ><img width="823" height="434" alt="Screenshot 2025-08-04 175555" src="https://github.com/user-attachments/assets/332519ac-2431-435d-b4ca-6faea6191fb5" />
 
----
-
-**Step 9:** Save and activate the webhook
-Click **Add Webhook** to complete the setup.
-GitHub will send a ping to verify.
-
-> Insert screenshot of save action
-
----
-
-**Step 10:** Trigger a test event
-Push code or open a pull request to trigger the notification.
-
-> Insert screenshot of test activity
-
----
-
-**Step 11:** Verify message in Slack
-Check the selected Slack channel to confirm the notification appears.
-
-> Insert screenshot of Slack message received
-
+ Confirmation of successful subscription and commit notification in Slack
+ ><img width="741" height="290" alt="Screenshot 2025-08-04 175219" src="https://github.com/user-attachments/assets/46d7f0a5-7467-4ddc-a278-62a3a0add7b2" />
 
 
 ---
