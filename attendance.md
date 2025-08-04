@@ -1,8 +1,9 @@
-<img width="980" height="630" alt="image" src="https://github.com/user-attachments/assets/df8aa6e8-6e64-4904-aa15-4a7247c0a3ec" />
+
+
 
 
 # Attendance API – POC
-
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/77019615-6703-4dda-b369-ae1a18538506" />
 ---
 
 ## Author Information
