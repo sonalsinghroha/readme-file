@@ -1,5 +1,6 @@
 
-# Full Stack 
+# Full Stack - Documentation
+<img width="900" height="560" alt="image" src="https://github.com/user-attachments/assets/825673af-ddab-4f96-b7b7-a2d6bb77e73d" />
 
 ---
 
@@ -48,25 +49,14 @@ The system is built using Go, Python (Flask), Java (Spring Boot), Redis, Postgre
 | **`attendance-api`**         | Python (Flask)      | PostgreSQL / MySQL      | Redis            | Record attendance, check-in/check-out, reports              | [Link](https://github.com/OT-MICROSERVICES/attendance-api) |
 | **`salary-api`**             | Java (Spring Boot)  | MySQL / Elasticsearch   | Redis Queue      | Calculate salaries based on attendance, rules               | [Link](https://github.com/OT-MICROSERVICES/salary-api) |
 | **`notification-worker`**    | Python              | N/A                     | Redis Queue      | Queue and send notifications via email/SMS                  | [Link](https://github.com/OT-MICROSERVICES/notification-worker) |
-| **`Frontend` (optional)**    | React + Traefik     | N/A                     | N/A              | Interface to interact with backend services                               |[frontend](https://github.com/OT-MICROSERVICES/frontend) |
+| **`Frontend`**    | React + Traefik     | N/A                     | N/A              | Interface to interact with backend services                               |[Link](https://github.com/OT-MICROSERVICES/frontend) |
 
 ---
 
 ## 3. System Architecture
 
-```plaintext
-[Frontend (React)]
-       |
-    [Traefik]
-       ↓
- ┌────────────┐      ┌──────────────┐      ┌─────────────┐      ┌──────────────────┐
- │employee-api│<──→──│attendance-api│<──→──│  salary-api │<───→─│notification-worker│
- └────────────┘      └──────────────┘      └─────────────┘      └──────────────────┘
-       ↓                   ↓                       ↓                      ↓
-   [ScyllaDB]        [PostgreSQL]            [MySQL/Elastic]          [SMTP/SMS]
-       ↑                   ↑                       ↑                      ↑
-     [Redis]           [Redis]                 [Redis Queue]          [Redis Queue]
-````
+<img width="2912" height="1156" alt="image" src="https://github.com/user-attachments/assets/07be203a-afce-4cf4-9093-21c02fb166f9" />
+
 
 ---
 
@@ -162,7 +152,7 @@ The system is built using Go, Python (Flask), Java (Spring Boot), Redis, Postgre
 
 ## 10. Conclusion
 
-This full-stack HR system enables robust attendance tracking, salary computation, and employee management through modular microservices. Its scalable design allows independent development and deployment of services while maintaining performance and observability. Redis and databases serve as the backbone for service communication and data persistence.
+This full-stack enables robust attendance tracking, salary computation, and employee management through modular microservices. Its scalable design allows independent development and deployment of services while maintaining performance and observability. Redis and databases serve as the backbone for service communication and data persistence.
 
 ---
 
@@ -183,6 +173,7 @@ This full-stack HR system enables robust attendance tracking, salary computation
 | salary-api          | [https://github.com/OT-MICROSERVICES/salary-api](https://github.com/OT-MICROSERVICES/salary-api)                   |
 | notification-worker | [https://github.com/OT-MICROSERVICES/notification-worker](https://github.com/OT-MICROSERVICES/notification-worker) |
 | frontend            | [https://github.com/OT-MICROSERVICES/frontend](https://github.com/Snaatak-Cloudops-Crew/documentation/tree/SCRUM-72-divya-mishra/OT-Microservices/Applications/Frontend-api/Introduction#readme)                       |
+| full-stack POC      | [https://github.com/Snaatak-Cloudops-Crew/documentation/blob/SCRUM-79-meenu/OT-Microservices/Applications/FullStack/POC/README.md](https://github.com/Snaatak-Cloudops-Crew/documentation/blob/SCRUM-79-meenu/OT-Microservices/Applications/FullStack/POC/README.md)               |
 
 
 ---
