@@ -65,20 +65,27 @@ They are crucial for monitoring, troubleshooting, and optimizing the system.
 
 ---
 
-**Workflow Diagram:**
+## **Workflow Diagram:**
 
-```
-[SonarQube Components]
-         ↓
-[Logging Framework]
-         ↓
-[Log Files in /logs Directory]
-         ↓
-[Rotation & Archival]
-         ↓
-[Analysis & Troubleshooting]
-```
 
+
+---
+```mermaid
+flowchart TD
+  SQ[SonarQube Components]:::aStyle
+  LF{{Logging Framework}}:::bStyle
+  LOGS([Log Files in <br>/logs Directory]):::cStyle
+  ROT[/Rotation & Archival/]:::dStyle
+  ANALYSIS{"Analysis &<br>Troubleshooting"}:::eStyle
+
+  SQ ==> LF ==> LOGS ==> ROT ==> ANALYSIS
+
+  classDef aStyle fill:#FDC70C,stroke:#F39C12,stroke-width:3px,color:#222;
+  classDef bStyle fill:#17E9E0,stroke:#10B2A9,stroke-width:3px,color:#2d323a;
+  classDef cStyle fill:#97FF89,stroke:#549f47,stroke-width:3px,color:#1E4035;
+  classDef dStyle fill:#B587F5,stroke:#674ea7,stroke-width:3px,color:#2a084b;
+  classDef eStyle fill:#FF77A9,stroke:#D72660,stroke-width:4px,color:#fff;
+```
 ---
 
 ## Types of SonarQube Log Files
