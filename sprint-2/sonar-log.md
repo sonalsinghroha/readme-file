@@ -145,7 +145,4 @@ Well-maintained logs not only assist in troubleshooting but also play a signific
 | [ELK Stack Overview](https://www.elastic.co/what-is/elk-stack)                     | Centralized logging solution     |
 | [Splunk Documentation](https://docs.splunk.com/)                                   | Enterprise log analysis platform |
 
----
 
-If you want, I can **also add a clean workflow diagram image** instead of the plain text diagram so it matches the style of the SSL doc’s image header. That would make it visually consistent.
-Do you want me to create that image?
