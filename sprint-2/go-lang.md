@@ -22,7 +22,6 @@
 * [Different Tools for GoLang CI](#different-tools-for-golang-ci)
 * [Comparison of Popular Tools](#comparison-of-popular-tools)
 * [Advantages of GoLang CI Checks](#advantages-of-golang-ci-checks)
-* [Proof of Concept (POC)](#proof-of-concept-poc)
 * [Best Practices](#best-practices)
 * [Recommendations & Conclusion](#recommendations--conclusion)
 * [Contact Information](#contact-information)
@@ -72,20 +71,45 @@ These checks ensure **code quality, maintainability, and reliability**.
 
 **Workflow Diagram:**
 
-```
-[Code Commit]  
-     ↓  
-[CI Trigger]  
-     ↓  
-[Linting & Static Analysis]  
-     ↓  
-[Unit & Integration Tests]  
-     ↓  
-[Bug Reports Generated]  
-     ↓  
-[Fix & Re-run Checks]  
-     ↓  
-[Merge to Main]
+```mermaid
+%%{init:  {"theme":"default", "themeVariables": {
+  "fontSize":"18px",
+  "edgeLabelBackground":"#fffde4"
+}} }%%
+flowchart TD
+
+  commit[**Code Commit**]:::start
+  trigger[**CI Trigger**]:::trigger
+  lint[**Linting & Static Analysis**]:::lint
+  test[**Unit & Integration Tests**]:::test
+  bug[**Bug Reports Generated**]:::bug
+  fix[**Fix & Re-run Checks**]:::fix
+  merge[**Merge to Main**]:::merge
+
+  commit --> trigger
+  trigger --> lint
+  lint --> test
+  test --> bug
+  bug --> fix
+  fix --> merge
+
+  %% Node style definitions
+  classDef start fill:#FFE066,stroke:#AA8500,stroke-width:4px,color:#222,stroke-dasharray:6,3;
+  classDef trigger fill:#B7E9F7,stroke:#2176AE,stroke-width:4px,color:#173142;
+  classDef lint fill:#D9F6F0,stroke:#43AA8B,stroke-width:4px,color:#285943;
+  classDef test fill:#FFCFD2,stroke:#FF5252,stroke-width:4px,color:#722F37;
+  classDef bug fill:#F6E7CB,stroke:#B45F06,stroke-width:4px,color:#604321;
+  classDef fix fill:#D6CDEA,stroke:#6C3483,stroke-width:4px,color:#2C1B3D;
+  classDef merge fill:#C7FFD8,stroke:#11998E,stroke-width:5px,color:#184D47,stroke-dasharray:7,2;
+
+  %% Node class assignment
+  class commit start;
+  class trigger trigger;
+  class lint lint;
+  class test test;
+  class bug bug;
+  class fix fix;
+  class merge merge;
 ```
 
 ---
@@ -129,34 +153,7 @@ These checks ensure **code quality, maintainability, and reliability**.
 
 ---
 
-## Proof of Concept (POC)
 
-Example: **Using GitHub Actions with golangci-lint**
-
-**.github/workflows/golangci.yml**
-
-```yaml
-name: GoLang CI Checks
-
-on: [push, pull_request]
-
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-go@v4
-        with:
-          go-version: 1.21
-      - name: Install golangci-lint
-        run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
-      - name: Run golangci-lint
-        run: golangci-lint run ./...
-```
-
-This setup runs lint checks automatically on each commit or PR.
-
----
 
 ## Best Practices
 
