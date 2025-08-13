@@ -23,7 +23,6 @@
 * [Different Tools for Python Bugs Analysis](#different-tools-for-python-bugs-analysis)
 * [Comparison of Popular Tools](#comparison-of-popular-tools)
 * [Advantages of Python CI Bugs Analysis](#advantages-of-python-ci-bugs-analysis)
-* [Proof of Concept (POC)](#proof-of-concept-poc)
 * [Best Practices](#best-practices)
 * [Recommendations & Conclusion](#recommendations--conclusion)
 * [Contact Information](#contact-information)
@@ -62,37 +61,55 @@ For both **attendance-api** and **notification-worker**, this includes:
 
 ---
 
+
+
+---
+
 ## Workflow of CI Bugs Analysis
 
-| Step | Action                                                                      |
-| ---- | --------------------------------------------------------------------------- |
-| 1    | Developer pushes changes to `attendance-api` or `notification-worker` repo. |
-| 2    | CI pipeline (e.g., GitHub Actions) is triggered automatically.              |
-| 3    | Static analysis (flake8, pylint, mypy) runs on the code.                    |
-| 4    | Unit & integration tests execute (pytest).                                  |
-| 5    | Code coverage and quality metrics are calculated.                           |
-| 6    | Bug reports and warnings are generated in CI logs.                          |
-| 7    | Developer fixes issues until all checks pass before merging.                |
+| Step | Action                                                                                   |
+| ---- | ---------------------------------------------------------------------------------------- |
+| 1    | Developer pushes changes to `attendance-api` or `notification-worker` repository.        |
+| 2    | CI pipeline (e.g., Jenkins, GitLab CI/CD, CircleCI) is automatically triggered.          |
+| 3    | Static analysis tools (flake8, pylint, mypy) run to detect style issues and code errors. |
+| 4    | Unit and integration tests execute using `pytest` or equivalent test frameworks.         |
+| 5    | Code coverage and quality metrics are calculated and stored for reporting.               |
+| 6    | Bug reports, warnings, and test results are displayed in CI logs or dashboards.          |
+| 7    | Developer resolves issues and re-runs the pipeline until all checks pass successfully.   |
 
 ---
 
 **Workflow Diagram:**
 
+```mermaid
+%%{init:  {"theme":"default", "themeVariables": {"fontSize":"18px","edgeLabelBackground":"#FFFDE4"}} }%%
+flowchart TD
+  pr(["Commit / Pull Request"]):::start
+  trigger["CI/CD Trigger (Jenkins / GitLab CI / CircleCI)"]:::process
+  lint{{"Static Analysis (flake8 / pylint / mypy)"}}:::decision
+  test["Run Unit & Integration Tests (pytest)"]:::process
+  report["Generate Bug & Quality Report"]:::io
+  fix["Fix Issues & Re-run Pipeline"]:::action
+  merge(["Merge Code to Main Branch"]):::final
+
+  pr --> trigger
+  trigger --> lint
+  lint --> test
+  test --> report
+  report --> fix
+  fix --> merge
+
+  %% Styling
+  classDef start fill:#ffe082,stroke:#fbc02d,stroke-width:4px,color:#333;
+  classDef process fill:#b3e5fc,stroke:#0288d1,stroke-width:4px,color:#222;
+  classDef decision fill:#d5f5e3,stroke:#239b56,stroke-width:4px,color:#222;
+  classDef io fill:#ffe6e6,stroke:#c62828,stroke-width:4px,color:#222;
+  classDef action fill:#e1bee7,stroke:#8e24aa,stroke-width:4px,color:#333;
+  classDef final fill:#fff59d,stroke:#ffb300,stroke-width:6px,color:#333,stroke-dasharray: 8,4;
 ```
-[Commit / Pull Request]
-        ↓
-[CI Trigger]
-        ↓
-[Static Analysis (flake8/pylint/mypy)]
-        ↓
-[Run Unit & Integration Tests (pytest)]
-        ↓
-[Generate Bug & Quality Report]
-        ↓
-[Fix Issues & Re-run]
-        ↓
-[Merge Code]
-```
+
+
+
 
 ---
 
@@ -135,49 +152,7 @@ For both **attendance-api** and **notification-worker**, this includes:
 
 ---
 
-## Proof of Concept (POC)
 
-Example: **GitHub Actions Workflow for Attendance & Notification Services**
-
-**.github/workflows/python-ci.yml**
-
-```yaml
-name: Python CI Bugs Analysis
-
-on: [push, pull_request]
-
-jobs:
-  ci-checks:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        service: [attendance-api, notification-worker]
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          repository: OT-MICROSERVICES/${{ matrix.service }}
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install flake8 pylint mypy pytest coverage bandit
-      - name: Lint with flake8
-        run: flake8 .
-      - name: Static analysis with pylint
-        run: pylint $(git ls-files '*.py')
-      - name: Type check with mypy
-        run: mypy .
-      - name: Run tests
-        run: pytest --disable-warnings --maxfail=1 --cov=. --cov-report=term-missing
-      - name: Security scan
-        run: bandit -r .
-```
-
-This runs **linting, type checking, testing, and security scanning** for both microservices on every PR.
-
----
 
 ## Best Practices
 
