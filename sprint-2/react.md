@@ -127,39 +127,6 @@ For React, this typically involves **npm**, **yarn**, or **pnpm** dependency aud
 
 ---
 
-## Proof of Concept (POC)
-
-Example: **GitHub Actions with npm audit + Snyk**
-
-**.github/workflows/dependency-scan.yml**
-
-```yaml
-name: React Dependency Scanning
-
-on: [push, pull_request]
-
-jobs:
-  audit:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm ci
-      - name: Run npm audit
-        run: npm audit --audit-level=high
-      - name: Snyk Scan
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-```
-
-This setup runs both npm audit and Snyk scans on every commit or PR.
-
----
-
 ## Best Practices
 
 * Run **dependency scanning** on every PR before merge.
