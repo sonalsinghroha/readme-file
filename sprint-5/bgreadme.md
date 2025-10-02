@@ -1,6 +1,6 @@
 # Blue-Green Deployment Strategy
 
-<img width="3480" height="1702" alt="image" src="https://github.com/user-attachments/assets/55c622ef-b50c-4a6d-a567-92e1ac9b4f7a" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/55c622ef-b50c-4a6d-a567-92e1ac9b4f7a" />
 
 
 
